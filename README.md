@@ -2,7 +2,7 @@
 -	Lấy danh sách link:
     - Để thực hiện bài toán phân loại văn bản này , cần thu thập một tập dữ liệu phong phú và đa dạng. Nguồn dữ liệu có thể từ các trang web, báo điện tử , diễn đàn, hoặc các kho dữ liệu mở. Ở đây chúng em thu thập dữ liệu từ trang web : Tin tức 24h mới nhất, tin nhanh, tin nóng hàng ngày | Báo Thanh Niên (thanhnien.vn).
     - Bước đầu ta sử dụng thư viện requests để lấy được nội dung của các trang chủ của các danh mục và sử dụng thư viện BeautifulSoup để xử lý
-    - Sau đó tìm các hrel từ thẻ a có class = “box-category-link-title” và lưu lại. Sau đó truy cập vào các link và lặp lại các bước đến khi đủ số lượng link nhất định (Trong bài là 30000 link)
+    - Sau đó tìm các hrel từ thẻ a có class = “box-category-link-title” và lưu lại. Sau đó truy cập vào các link và lặp lại các bước đến khi đủ số lượng link nhất định (Trong bài là 25000 link)
     - Do số lượng lớn nên ta sử dụng đa luồng để tối ưu về thời gian chạy
 -	Lấy danh mục và nội dung:
     - Ta truy cập từng link đã lấy ở trên, sau đó ta lấy danh mục từ thẻ div có class = “detail-cate” và lấy nội dung từ thẻ div có class  = “detail-cmain”. Lặp lại các bước đến khi hết số lượng link
